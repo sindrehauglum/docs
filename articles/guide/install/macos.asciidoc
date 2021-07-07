@@ -14,7 +14,8 @@ To start developing with Vaadin, you need to install <<installing.macos.java, Ja
 [[installing.macos.java]]
 == Installing Java
 
-Amazon Corretto is a no-cost, multiplatform, production-ready distribution of the Open Java Development Kit (OpenJDK). Read more from https://aws.amazon.com/corretto/
+Amazon Corretto is a no-cost, multiplatform, production-ready distribution of the Open Java Development Kit (OpenJDK).
+Read more from https://aws.amazon.com/corretto/
 
 . Download and run the *Amazon Corretto 11* macOS installer (.pkg)
 +
@@ -42,7 +43,7 @@ include::../_terminal.asciidoc[]
 [[installing.macos.maven]]
 == Installing Maven
 
-http://maven.apache.org[Maven] is a package manager and a build tool for Java based projects.
+http://maven.apache.org[Maven] is a package manager and a build tool for Java-based projects.
 
 To install Maven, enter the following in a terminal window:
 

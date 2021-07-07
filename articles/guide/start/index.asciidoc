@@ -22,7 +22,7 @@ Choose whether to build your application using <<{articles}/flow/overview#,Flow>
 .You can change your mind later
 [NOTE]
 Don't worry about making "a wrong choice".
-You can switch between Flow and Fusion in a project later if you want to.
+You can switch between Flow and Fusion in a project later, if you want to.
 
 --
 
@@ -36,12 +36,12 @@ https://start.vaadin.com?preset=latest[Open {wizard-name}, role="button"]
 [.card.large]
 === Start With Fusion
 image::../../_images/fusion.svg[opts=inline, role=icon]
-Build your backend services using Java and UIs using TypeScript and HTML.
+Build your backend services with Java and UIs using TypeScript and HTML.
 
 https://start.vaadin.com?preset=fusion[Open {wizard-name}, role="button"]
 
 [.breakout]
-=== Non-Spring Boot Starters
+=== Starters Not Based on Spring Boot
 The applications created using {wizard-name} are based on Spring Boot.
 Vaadin Flow starters for other stacks, such as JavaEE or plain servlet, are available in GitHub.
 Note that Fusion only works with a Spring Boot project.
@@ -55,7 +55,7 @@ More https://github.com/search?q=org%3Avaadin+starter&type=repositories[Vaadin s
 
 == Next Steps
 
-Once you have downloaded a starter project and have it extracted in a local folder, you can import it to your favorite IDE (integrated development environment) and start developing it further.
+Once you have downloaded a starter project and extracted it into a local folder, you can import it to your favorite integrated development environment (IDE) and start developing it further.
 
 .Ways to create and run a new project
 [.subtle]

@@ -12,7 +12,7 @@ pass:[<!-- vale Vaadin.Abbr = NO -->]
 [.lead]
 To start developing with Vaadin, you need to install Java (JDK) and http://maven.apache.org[Maven].
 
-The instructions are for Debian-based and RPM-based distributions.
+These instructions are for Debian-based and RPM-based distributions.
 They should be similar on other Linux distributions.
 
 == Debian and Ubuntu
@@ -32,7 +32,7 @@ If your system does not have `sudo` installed, run the above commands as root.
 
 == Fedora and RHEL
 
-On Fedora (since 18) and RHEL (since 8), you use the DNF package manager.
+On Fedora (since version 18) and RHEL (since version 8), you use the DNF package manager.
 
 . Install the development tools:
 +
@@ -40,19 +40,19 @@ On Fedora (since 18) and RHEL (since 8), you use the DNF package manager.
 sudo dnf -y install java-11-openjdk.x86_64 maven
 ----
 
-. Ensure that you are running Java 11 by running:
+. Ensure that you are running Java version 11 by running:
 +
 ----
 java -version
 ----
 +
-If you are not using 11, change it with:
+If you are not using version 11, change it with:
 +
 ----
 sudo alternatives --config java
 ----
 +
-Select OpenJDK 11.
+Select OpenJDK version 11.
 
 == RPM-based Systems Using YUM
 
@@ -62,13 +62,13 @@ Select OpenJDK 11.
 sudo yum install -y java-11-openjdk-devel.x86_64 maven
 ----
 
-. Ensure that you are running Java 11 by running:
+. Ensure that you are running Java version 11 by running:
 +
 ----
 java -version
 ----
 +
-If you are not using 11, change it with:
+If you are not using version 11, change it with:
 +
 ----
 sudo alternatives --config java
@@ -76,31 +76,31 @@ sudo alternatives --config java
 
 == OpenSuSE
 
-On OpenSuSE, you use the zypper package manager as follows:
+On OpenSuSE, you use the `zypper` package manager as follows:
 
 ----
 sudo zypper install java-11-openjdk maven
 ----
 
-Depending on your system version, you may need to install package repositories or do some other steps.
+Depending on your system version, you may need to install package repositories or perform some other steps.
 
 == Arch Linux
 
-On Arch Linux, you use the pacman package manager as follows:
+On Arch Linux, you use the `pacman` package manager, as follows:
 
 ----
 pacman -S jdk11-openjdk maven
 ----
 
-Depending on your system version, you may need to install package repositories or do some other steps.
+Depending on your system version, you may need to install package repositories or perform some other steps.
 
 == Installing Amazon Corretto
 
-If you want to install Amazon Corretto rather than OpenJDK, you either have to add the package repository or install it from a DEB, RPM, or a tar package.
+If you want to install Amazon Corretto, rather than OpenJDK, you either have to add the package repository or install it from a `.deb`, `.rpm` or `.tar` package.
 
 See:
 
-* Instructions for installing from APT (Debian) or YUM (RPM) repository in https://docs.aws.amazon.com/corretto/latest/corretto-11-ug/linux-info.html[Amazon Corretto 11 Guide for Linux]
+* Instructions for installing from an APT (Debian) or YUM (RPM) repository in https://docs.aws.amazon.com/corretto/latest/corretto-11-ug/linux-info.html[Amazon Corretto 11 Guide for Linux]
 
 * Download installation packages from link:https://docs.aws.amazon.com/corretto/latest/corretto-11-ug/downloads-list.html[https://docs.aws.amazon.com/corretto/latest/corretto-11-ug/downloads-list.html]
 
