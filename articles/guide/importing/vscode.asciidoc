@@ -5,7 +5,7 @@ order: 400
 layout: page
 ---
 
-= Importing a Project in the Visual Studio Code
+= Importing a Project in the Visual Studio Code IDE
 
 . In VS Code, select *"File > Open Folder..."*.
 . Select the folder containing the Maven project you want to import.
@@ -20,7 +20,7 @@ Click [guibutton]#Yes# or [guibutton]#Always#.
 image:images/vscode/import-java-projects.png[Open Folder]
 
 VS Code may suggest that you install additional extensions.
-The following ones are recommended for Vaadin:
+The following extensions are recommended for Vaadin:
 
 * Java Extension Pack
 * lit-plugin

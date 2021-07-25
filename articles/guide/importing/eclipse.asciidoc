@@ -18,12 +18,13 @@ image::images/eclipse/import-window.png[Import window]
 [.subtle]
 image::images/eclipse/select-root-directory.png[Select the root directory]
 +
-NOTE: If you are importing a multi-module Maven project, make sure you select the correct project to import. You will typically want to select all the projects.
+NOTE: If you are importing a multi-module Maven project, make sure you select the correct project to import.
+You will typically want to select all the projects.
 
 . Click [guibutton]#Finish#.
 Eclipse will import the project and start downloading the required resources.
 
-After importing finishes, you are ready to explore the project.
+When the import finishes, you are ready to explore the project.
 If you need to make changes to the configuration, see <<{articles}/guide/configuration#, Configuration>>.
 
-To run the application, proceed to <<../running/eclipse#, Running an Application in the Eclipse IDE>>.
+For information on running the application, see <<../running/eclipse#, Running an Application in the Eclipse IDE>>.
