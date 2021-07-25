@@ -35,37 +35,37 @@ You can run the web application in an embedded web server by running the appropr
 | Plain Java | Jetty | `jetty:run`
 |===
 
-While the server is running, you can edit and save any source files, and the server notices the change and redeploys web application.
+While the server is running, you can edit and save any source files. The server notices the change and redeploys the web application.
 You can also enable <<{articles}/guide/live-reload#, Live Reload>>.
 
-To stop the server, click the stop button in the *Output* view:
+To stop the server, click the "stop" button in the *Output* view:
 
 image:images/netbeans/output-view.png[Output view]
 
 [[maven.actions]]
 === Binding Maven Goals to IDE Actions
 
-As running the web application is a frequent task during development, you may want to bind such Maven goal to an _IDE action_.
+As running the web application is a frequent task during development, you may want to bind such a Maven goal to an _IDE action_.
 
-To associate the *Run project* action to a Maven goal to start the server, do as follows:
+To associate the *Run project* action with a Maven goal to start the server, proceed as follows:
 
 . Right-click the project in the *Projects* view and select *Properties*.
 . In the *Project Properties* window, select *"Categories > Actions"*.
 . Select the *"Actions > Run project"* option.
-. Type the goal to start the web server in *Execute Goals*: either `jetty:run` (plain Java project), `tomee:run` (CDI project), or `spring-boot:run` (Spring Boot project).
+. In *Execute Goals*, type the goal to start the web server: `jetty:run` (plain Java project), `tomee:run` (CDI project), or `spring-boot:run` (Spring Boot project).
 . Click [guibutton]#OK#:
 +
 image:images/netbeans/actions.png[Actions]
 
-Now you can deploy and run the web application by clicking the run icon in the toolbar:
+Now you can deploy and run the web application by clicking the "run" icon in the toolbar:
 
 image:images/netbeans/toolbar.png[Toolbar]
 
-You can repeat the process to bind the same Maven goal to the *Debug project* IDE action as well.
+You can repeat the process to bind the same Maven goal to the *Debug project* IDE action, as well.
 
-If the Vaadin application was created with the project wizard or a Maven archetype, you should be able to access it at http://localhost:8080/[localhost:8080].
+If the Vaadin application was created with the project wizard or a Maven archetype, it should be available at http://localhost:8080/[localhost:8080].
 
-With the above configuration, you can now use NetBeans to develop your Vaadin application with Maven.
+Using the above configuration, you can now use NetBeans to develop your Vaadin application with Maven.
 
 ifdef::web[]
 To learn more about:

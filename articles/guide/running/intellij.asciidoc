@@ -12,15 +12,15 @@ layout: page
 [[spring-boot]]
 == Running a Spring Boot Project
 
-If you are developing a Spring Boot project, Spring Boot makes it easier to run a Java web application, because it takes care of starting and configuring the server.
+If you are developing a Spring Boot project, it is easier to run a Java web application, because Spring Boot takes care of starting and configuring the server.
 
-To run your application, all you need to do is to run the [classname]#Application# class that contains the main method that starts Spring Boot.
-IntelliJ automatically detects that you have a class with a [methodname]#main()# method and displays it in the run configurations dropdown.
+To run your application, all you need to do is run the [classname]#Application# class that contains the [methodname]#main()# method that starts Spring Boot.
+IntelliJ automatically detects that you have such a a class and displays it in the run configurations dropdown.
 
 To start the application, either:
 
-* Click the play button next to the run configurations dropdown.
-* Open `Application.java` and click the play button next to the code line containing the main method.
+* Click the "play" button next to the run configurations dropdown.
+* Open the `Application.java` file and click the "play" button next to the code line containing the main method.
 
 image:images/intellij/run-app.png[Run button locations]
 
@@ -42,12 +42,12 @@ You should now be able to open the web application at http://localhost:8080/[loc
 
 You can use Maven to compile and run a Vaadin application.
 IntelliJ IDEA has an excellent integration with Maven.
-You can run common commands such as `mvn install` without having to leave the IDE.
+You can run common commands, such as `mvn install`, without having to leave the IDE.
 
-You can run the application in a development server with Maven goals such as `jetty:run` (plain Java), `tomee:run` (Java EE and CDI), or `spring-boot:run` (Spring Boot).
-Notice that with Spring Boot, you can simply run the application class, as described in <<spring-boot>>.
+You can run the application in a development server with Maven goals, such as `jetty:run` (plain Java), `tomee:run` (Java EE and CDI), or `spring-boot:run` (Spring Boot).
+Notice that, with Spring Boot, you can simply run the application class, as described in <<spring-boot>>.
 
-. Open the *Maven* view by clicking the vertical tab on the right side of the IntelliJ IDEA window:
+. Open the *Maven* view by clicking the vertical tab at the right-hand side of the IntelliJ IDEA window:
 +
 .Maven projects view
 image::images/intellij/maven-projects-view.png[Maven projects view]
@@ -55,15 +55,15 @@ image::images/intellij/maven-projects-view.png[Maven projects view]
 This view shows all the available Maven projects and their https://vaadin.com/learn/tutorials/learning-maven-concepts[build phases and build goals].
 
 . Let us say you want to run `mvn install`.
-To do that, expand the project tree in the *Maven* view to show the corresponding https://vaadin.com/learn/tutorials/learning-maven-concepts#_what_is_a_build_phase[lifecycle phase].
+To do this, expand the project tree in the *Maven* view to show the corresponding https://vaadin.com/learn/tutorials/learning-maven-concepts#_what_is_a_build_phase[lifecycle phase].
 +
 image::images/intellij/lifecycle.png[Lifecycle phases, 313, 331]
 
 . Double-click *install*.
 
-You will see how IntelliJ idea executes the `install` build phase.
-First, it executes all the previous phases in the Maven's default lifecycle.
-Finally at the `install` phase, it downloads dependencies and copies the generated artifacts into your local Maven repository, among other things.
+You will see how IntelliJ IDEA executes the `install` build phase.
+First, it executes all the previous phases in Maven's default lifecycle.
+Finally, at the `install` phase, it downloads dependencies and copies the generated artifacts into your local Maven repository as part of the process.
 
 You can use a similar approach to run any Maven goal.
 For example, you can double-click the `jetty:run` goal in the *Plugins* sub-tree to deploy and run the web application implemented in the project you imported.
@@ -77,10 +77,10 @@ endif::web[]
 
 === Creating a Running Configuration
 
-Since using a goal to run the application could be a frequent task during the development, you may want to create a _running configuration_ for it.
+You are likely to want to use a goal to run the application frequently during  development, so you may want to create a _running configuration_ for it.
 
 A _running configuration_ is a _shortcut_ to run a specific task from within the IDE.
-In the following, we create a running configuration for the `jetty:run` Maven goal to make it simpler to run the web application.
+Here, we create a running configuration for the `jetty:run` Maven goal to make it simpler to run the web application.
 
 . Open the *Maven* view.
 . Right-click the `jetty:run`, `tomee:run`, or `spring-boot:run` item under the appropriate folder.
@@ -103,7 +103,7 @@ image:images/intellij/run-on-jetty.png[Run on Jetty]
 
 . Click [guibutton]#OK#:
 
-You should see the new option on the top right corner of IntelliJ IDEA:
+You should see the new option at the top-right corner of IntelliJ IDEA:
 
 image:images/intellij/config-created.png[Running configuration created]
 
@@ -113,7 +113,7 @@ image::images/intellij/run-icon.png[Run icon]
 
 == Redeploying During Development
 
-If you edit and save any of the source files, they will be compiled automatically, but you can only see the changes by restarting the server.
+If you edit and save any of the source files, they will be compiled automatically, but you need to restart the server in order to see the changes.
 In the *Run* panel, click the *Rerun* icon, or press kbd:[Ctrl+5] in the editor.
 You can then refresh the page to use the updated version.
 
