@@ -65,10 +65,7 @@ endif::example-scale[]
   padding: 0;
   padding-top: 52%;
   min-height: 0 !important;
-  border: 1px solid var(--docs-divider-color-2);
-  border-radius: 0;
-  margin: var(--docs-space-s);
-  margin-bottom: var(--docs-space-xs);
+  border: 1px solid var(--docs-divider-color-1);
 }
 
 .example {
@@ -123,6 +120,10 @@ endif::example-scale-3[]
   .example.desktop {
     --scale: {example-scale-3};
   }
+}
+
+.example.mobile {
+  overflow: visible;
 }
 
 /* Aim for "standard" portrait phone dimensions */

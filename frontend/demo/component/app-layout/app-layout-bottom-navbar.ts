@@ -52,7 +52,7 @@ export class Example extends LitElement {
       <!-- tag::snippet[] -->
       <vaadin-app-layout>
         <h1 slot="navbar">MyApp</h1>
-        <vaadin-tabs slot="navbar touch-optimized">
+        <vaadin-tabs slot="navbar touch-optimized" theme="minimal equal-width-tabs">
           <vaadin-tab>
             <a tabindex="-1" target="_self">
               <iron-icon icon="vaadin:dashboard"></iron-icon>
